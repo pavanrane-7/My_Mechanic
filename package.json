@@ -1,0 +1,9 @@
+{
+  "name": "my-mechanic",
+  "version": "1.0.0",
+  "scripts": {
+    "frontend": "cd my-mechanic-frontend && npm run dev",
+    "backend": "cd my-mechanic-backend && node server.js",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  }
+}
