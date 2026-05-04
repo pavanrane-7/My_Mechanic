@@ -25,3 +25,20 @@ Database:
 
 Authentication:
 - JWT
+
+## Screenshots
+
+### Home Page
+![Home](screenshots/home.png)
+
+### Login
+![Login](screenshots/login.png)
+
+### Register
+![Register](screenshots/register.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Search Results
+![Search Results](screenshots/search-results.png)
