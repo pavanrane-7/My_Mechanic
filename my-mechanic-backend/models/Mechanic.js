@@ -30,22 +30,22 @@ const mechanicSchema = new mongoose.Schema(
       required: true,
     },
 
-    // 🔥 Geospatial Field (CRITICAL)
+    // Geospatial Field 
     location: {
       type: {
         type: String,
-        enum: ["Point"], // must be "Point"
+        enum: ["Point"], 
         required: true,
       },
       coordinates: {
-        type: [Number], // [longitude, latitude]
+        type: [Number], 
         required: true,
       },
     },
 
     vehicleTypes: [
       {
-        type: String, // "bike", "car", "truck"
+        type: String, 
       },
     ],
 
@@ -55,11 +55,11 @@ const mechanicSchema = new mongoose.Schema(
     },
   },
   {
-    timestamps: true, // adds createdAt, updatedAt
+    timestamps: true,
   }
 );
 
-// 🔥 Geospatial Index (MANDATORY for $near)
+// Geospatial Index 
 mechanicSchema.index({ location: "2dsphere" });
 
 module.exports = mongoose.model("Mechanic", mechanicSchema);
