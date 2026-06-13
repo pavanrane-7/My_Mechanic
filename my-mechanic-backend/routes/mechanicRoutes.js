@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 
-// JWT authentication middleware
 const protect = require("../middleware/authMiddleware");
 
 // Controller functions
